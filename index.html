@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shrey Khandelwal - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1e90ff;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 48px;
+        }
+        header p {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            color: #f2f2f2;
+            display: block;
+            padding: 14px 16px;
+            text-decoration: none;
+            float: left;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        section {
+            padding: 60px 80px;
+        }
+        section h2 {
+            font-size: 32px;
+            border-bottom: 2px solid #1e90ff;
+            padding-bottom: 10px;
+        }
+        .content {
+            margin-top: 30px;
+        }
+        .content h3 {
+            font-size: 24px;
+            color: #1e90ff;
+        }
+        .content p, .content li {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .content ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        footer {
+            background-color: #1e90ff;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        @media screen and (max-width: 768px) {
+            section {
+                padding: 40px 20px;
+            }
+            nav a {
+                float: none;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Shrey Khandelwal</h1>
+    <p>Software Developer | Machine Learning Engineer | CS Graduate Student</p>
+</header>
+
+<nav>
+    <a href="#about">About Me</a>
+    <a href="#education">Education</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#publications">Publications</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About Me</h2>
+    <div class="content">
+        <p>
+            I am a passionate software developer and machine learning engineer currently pursuing my Master's in Computer Science at the University of Virginia. With a strong foundation in algorithms and artificial intelligence, I have experience in developing high-performance models and deploying scalable applications. I am eager to contribute to innovative projects and collaborate with teams to solve complex problems.
+        </p>
+    </div>
+</section>
+
+<section id="education">
+    <h2>Education</h2>
+    <div class="content">
+        <h3>University of Virginia (Aug 2024 – Dec 2025)</h3>
+        <p><strong>Master of Science, Computer Science</strong></p>
+        <ul>
+            <li>Research Assistant at UVA Darden School of Business.</li>
+            <li>Teaching Assistant for the course “AI Hardware (ECE 6501)” for Fall 2024.</li>
+        </ul>
+
+        <h3>Manipal University, Jaipur, India (July 2020 – May 2024)</h3>
+        <p><strong>Bachelor of Technology, Computer and Communication Engineering</strong></p>
+        <p><strong>GPA:</strong> 9.39/10</p>
+        <ul>
+            <li>Coursework: Artificial Intelligence and Machine Learning, Design and Analysis of Algorithms, Software Engineering, Data Structures and Algorithms, Computer Networking, Relational Database Management System, Operating Systems.</li>
+            <li>Received the 3x Dean’s List Excellence in Academics Award.</li>
+            <li>Attained Highest GPA in Junior Year (2023): 9.93/10.</li>
+        </ul>
+    </div>
+</section>
+
+<section id="experience">
+    <h2>Professional Experience</h2>
+    <div class="content">
+        <h3>Mahindra and Mahindra, Mumbai, India (Aug 2023 – July 2024)</h3>
+        <p><strong>Software Development Intern</strong></p>
+        <ul>
+            <li>Created a high-performance OCR model using DB++ for text detection and VisionLAN for recognition on a custom dataset, achieving 99.1% detection and 98% recognition accuracy with 95ms GPU latency.</li>
+            <li>Developed a plug-and-play pipeline for backend server integration and created desktop executables; deployed in Mahindra plants for VIN plate verification (patent-pending).</li>
+            <li>Spearheaded SOFI automation using Azure Form Recognizer and OpenAI for document OCR and key-value extraction; implemented SSE for 80% bandwidth reduction and queueing for RPA execution.</li>
+            <li>Added PostgreSQL notification system (NOTIFY/LISTEN triggers); deployed a full-stack app using FastAPI backend, PostgreSQL, and Azure Blob Storage on Azure for multi-file KPI document automation.</li>
+            <li>Developed Aadhaar Card masking system using PaddleOCR (99.2% accuracy, 120ms/doc latency), Verhoeff algorithm for verification, and coordinate-based digit masking; integrated with SAP to mask and replace existing Aadhaar images for pan-Mahindra HR's recruit onboarding.</li>
+        </ul>
+
+        <h3>Sunic Technologies, Delhi, India (May 2023 – Aug 2023)</h3>
+        <p><strong>Software Development Intern</strong></p>
+        <ul>
+            <li>Engineered YOLOv8 models for multi-object detection and integrated PaddleOCR for text recognition, achieving a 99% recall rate.</li>
+            <li>Containerized the application with Docker for reliable deployment, enhancing yard management and security.</li>
+            <li>Deployed models on AWS EC2 using Python, FastAPI, and Docker, reducing manual verification time by 90% and optimizing for high-volume processing of yard assets.</li>
+        </ul>
+
+        <h3>Data Science Technologies, Pune, India (Aug 2022 – Oct 2022)</h3>
+        <p><strong>Cloud and Machine Learning Engineer Intern</strong></p>
+        <ul>
+            <li>Implemented an ML-driven SaaS solution (Ivy Chain) on Azure Functions, integrating Linear Regression, RFM Analysis, Market Basket Analysis, and FB Prophet models with Excel (VBA) and Google Sheets APIs.</li>
+            <li>Enabled SMEs to leverage advanced analytics directly in familiar spreadsheet tools.</li>
+        </ul>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="content">
+        <h3>Overengineered Playlist Recommendation</h3>
+        <p><strong>Technologies:</strong> FastAPI, Docker, Kubernetes, RabbitMQ, MongoDB, Spotify API</p>
+        <ul>
+            <li>Designed a microservice architecture application for playlist recommendation using Spotify, with authentication, notification, storage, and playlist generation services, coordinated via an API Gateway.</li>
+            <li>Implemented MongoDB for databases, GridFS for large-file storage, and RabbitMQ for robust message queuing and inter-service communication, facilitating efficient handling of user data and AI-generated playlists.</li>
+        </ul>
+
+        <h3>EventRush</h3>
+        <p><strong>Technologies:</strong> FastAPI, MongoDB, Azure, JWT</p>
+        <ul>
+            <li>Built a server-side solution with database architecture to streamline university event registration.</li>
+            <li>Integrated FastAPI authentication with JWT and Bcrypt for enhanced security.</li>
+            <li>Received the MLH Twilio Sponsor Award for this project in 2022.</li>
+        </ul>
+
+        <h3>Test Case Generation</h3>
+        <p><strong>Technologies:</strong> Python, Llama V2 7B, PaddleOCR</p>
+        <ul>
+            <li>Constructed a system that automates test case generation from SOP or project requirement documents.</li>
+            <li>Utilized PaddleOCR for text extraction and integrated with the Llama V2 7B model to generate test cases in 2023.</li>
+        </ul>
+    </div>
+</section>
+
+<section id="publications">
+    <h2>Research Publications</h2>
+    <div class="content">
+        <ul>
+            <li>Gangwar, A., Dhaka, V. S., Rani, G., Khandelwal, S., Zumpano, E., & Vocaturo, E. (2024). "Time and Space Efficient Multi-Model Convolution Vision Transformer for Tomato Disease Detection from Leaf Images with Varied Backgrounds." <em>Computers, Materials & Continua (CMC)</em>. DOI: <a href="https://doi.org/10.32604/cmc.2024.048119">10.32604/cmc.2024.048119</a></li>
+            <li>Rani, G., Khandelwal, S., Kundu, N., & Dhaka, V. S. (2023). "Automatic Segmentation and Classification of Skin Cancer Cells using Thresholding and Deep Learning based Techniques." <em>ETNCC Conference</em>, IEEE Xplore. DOI: <a href="https://doi.org/10.1109/ETNCC59188.2023.10284963">10.1109/ETNCC59188.2023.10284963</a></li>
+        </ul>
+    </div>
+</section>
+
+<section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="content">
+        <p><strong>Programming Languages:</strong> Python, C++, Golang, Bash, SQL</p>
+        <p><strong>Tools and Frameworks:</strong> Git, PyTorch, TensorFlow, PaddlePaddle, FastAPI, Flask, PostgreSQL, MySQL, MongoDB, AWS, Azure, RabbitMQ, Celery, Redis, Docker, Kubernetes, Linux, Nginx</p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <div class="content">
+        <p><strong>Email:</strong> <a href="mailto:zjy6us@virginia.edu">zjy6us@virginia.edu</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+14348825706">+1 (434) 882-5706</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/thisisshreykhandelwal" target="_blank">linkedin.com/in/thisisshreykhandelwal</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/hawkingradiation42" target="_blank">github.com/hawkingradiation42</a></p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Shrey Khandelwal</p>
+    <div class="contact-info">
+        <a href="mailto:zjy6us@virginia.edu">Email</a> |
+        <a href="https://linkedin.com/in/thisisshreykhandelwal" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/hawkingradiation42" target="_blank">GitHub</a>
+    </div>
+</footer>
+
+</body>
+</html>
